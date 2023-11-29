@@ -116,6 +116,10 @@ h1 {
     height: 118px;
     overflow-y: auto;
 }
+
+button:hover {
+    cursor: pointer;
+}
     
     
 
