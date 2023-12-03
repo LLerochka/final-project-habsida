@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width: 768px) and (min-width: 321px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px) and (min-width: 431px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 430px)" href="mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 430px)" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <title>Document</title>
 </head>
 <body>
@@ -32,15 +35,14 @@
                 <button type="button">Оставить заявку<img class="header__up__img" src="ic/repair.svg" alt=""></button>
                 <button type="button">Статус ремонта<img class="header__up__img" src="ic/checkstatus.svg" alt=""></button>
             </div>
-
-            <div class="navbar">
-                <button type="button" class="navbar__premium-button">Ремонтируемые бренды</button>
-                <button type="button" class="navbar__ordinary-button">Дополнительные услуги</button>
-                <button type="button" class="navbar__ordinary-button">Цены на услуги</button>
-                <button type="button" class="navbar__ordinary-button">Адреса сервисных центров</button>
-                <button type="button" class="navbar__ordinary-button">Специальные цены</button>
-                <button type="button" class="navbar__ordinary-button">Отзывы</button>
-            </div>
+                <div class="navbar">
+                    <button type="button" class="navbar__premium-button">Ремонтируемые бренды</button>
+                    <button type="button" class="navbar__ordinary-button">Дополнительные услуги</button>
+                    <button type="button" class="navbar__ordinary-button">Цены на услуги</button>
+                    <button type="button" class="navbar__ordinary-button">Адреса сервисных центров</button>
+                    <button type="button" class="navbar__ordinary-button">Специальные цены</button>
+                    <button type="button" class="navbar__ordinary-button">Отзывы</button>
+                </div>
         </header>
         
         <section class="about">
@@ -49,7 +51,7 @@
                     <p class="about__text-1">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                     <br>
                     <br>
-                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="tablet__hidden">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+                        <span class="mobile__hidden">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="tablet__hidden">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></span></p>
                 </div>
                 <div class="about__picture">
                     <img src="ic/main.jpg" alt="">
@@ -62,30 +64,35 @@
 
         <section class="brands">
             <div class="brands__title">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</div>
-            <div class="brands__logos">
-                <img src="ic/cat1.svg" alt="" class="logo">
-                <img src="ic/cat2.svg" alt="" class="logo">
-                <img src="ic/cat3.svg" alt="" class="logo">
-                <img src="ic/cat7.svg" alt="" class="logo">
-                <img src="ic/cat5.svg" alt="" class="logo">
-                <img src="ic/cat6.svg" alt="" class="logo">
-                <img src="ic/cat7.svg" alt="" class="logo-hidden">
-                <img src="ic/cat8.svg" alt="" class="logo-hidden">
-                <img class="brands__logos__hidden" src="ic/cat5.svg" alt="" class="logo">
-                <img class="brands__logos__hidden" src="ic/cat6.svg" alt="" class="logo">
-                <img class="brands__logos__hidden" src="ic/cat7.svg" alt="" class="logo">
-                
+            <div class="swiper">
+                <div class="brands__logos swiper-wrapper">
+                    <div class="swiper-slide"><img src="ic/cat1.svg" alt="" class="logo"></div>
+                    <div class="swiper-slide"><img src="ic/cat2.svg" alt="" class="logo"></div>
+                    <div class="swiper-slide"><img src="ic/cat3.svg" alt="" class="logo"></div>
+                    <div class="swiper-slide"><img src="ic/cat7.svg" alt="" class="logo"></div>
+                    <div class="swiper-slide"><img src="ic/cat5.svg" alt="" class="logo"></div>
+                    <div class="swiper-slide"><img src="ic/cat6.svg" alt="" class="logo"></div>
+                    <div class="swiper-slide"><img src="ic/cat7.svg" alt="" class="logo-hidden"></div>
+                    <div class="swiper-slide"><img src="ic/cat8.svg" alt="" class="logo-hidden "></div>
+                    <div class="swiper-slide"><img class="brands__logos__hidden" src="ic/cat5.svg" alt="" class="logo"></div>
+                    <div class="swiper-slide"><img class="brands__logos__hidden" src="ic/cat6.svg" alt="" class="logo"></div>
+                    <div class="swiper-slide"><img class="brands__logos__hidden" src="ic/cat7.svg" alt="" class="logo"></div>
+                </div>  
+                <div class="swiper-pagination"></div>
             </div>
             <button class="show-all"><img src="ic/icon.svg" alt="">Показать все</button>
         </section>
 
         <section class="devices">
             <div class="devices__title">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</div>
-            <div class="devices__boxes">
-                <div class="box-1"><p>Ремонт ноутбуков</p><img class="devices__boxes__go" src="ic/go.svg" alt=""></div>
-                <div class="box-2"><p>Ремонт планшетов</p><img class="devices__boxes__go" src="ic/go.svg" alt=""></div>
-                <div class="box-3"><p>Ремонт ПК</p><img class="devices__boxes__go" src="ic/go.svg" alt=""></div>
-                <div class="box-4"><p>Ремонт мониторов</p><img class="devices__boxes__go" src="ic/go.svg" alt=""></div>
+            <div class="swiper1">
+                <div class="devices__boxes swiper-wrapper">
+                    <div class="box-1 swiper-slide"><p>Ремонт ноутбуков</p><img class="devices__boxes__go" src="ic/go.svg" alt=""></div>
+                    <div class="box-2 swiper-slide"><p>Ремонт планшетов</p><img class="devices__boxes__go" src="ic/go.svg" alt=""></div>
+                    <div class="box-3 swiper-slide"><p>Ремонт ПК</p><img class="devices__boxes__go" src="ic/go.svg" alt=""></div>
+                    <div class="box-4 swiper-slide"><p>Ремонт мониторов</p><img class="devices__boxes__go" src="ic/go.svg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
             <button class="show-all"><img src="ic/icon.svg" alt="">Показать все</button>
         </section>
@@ -93,6 +100,52 @@
         
         <section class="prices">
             <div class="prices__title">ЦЕНЫ НА УСЛУГИ</div>
+            <div class="hidden__prices__list swiper2">
+                <div class="swiper-wrapper hidden__prices__list">
+
+                    <div class="swiper-slide box-11">
+                        <p class="uslugi">Р<span>Ремонтные услуги</span>
+                            <br>Диагностика</p>
+                        <p class="price"><span>Цена</span>Бесплатно</p>
+                        <p class="time">Срок</span>30 мин</p>
+                        <button class="order">Заказать <img src="ic/dropdown.svg" alt=""></button>
+
+                    </div>
+                    <div class="swiper-slide box-22">
+                        <p class="uslugi"><span>Ремонтные услуги</span>
+                            <br>Замена дисплея</p>
+                        <p class="price"><span>Цена</span>1 000 ₽</p>
+                        <p class="time"><span>Срок</span>30-120 мин</p>
+                        <button class="order">Заказать <img src="ic/dropdown.svg" alt=""></button>
+
+                    </div>
+                    <div class="swiper-slide box-33">
+                        <p class="uslugi"><span>Ремонтные услуги</span>
+                            <br>Замена полифонического динамика</p>
+                        <p class="price"><span>Цена</span>1 000 ₽</p>
+                        <p class="time"><span>Срок</span>30-120 мин</p>
+                        <button class="order">Заказать <img src="ic/dropdown.svg" alt=""></button>
+
+                    </div>
+                    <div class="swiper-slide box-44">
+                        <p class="uslugi"><span>Ремонтные услуги</span>
+                            <br>Тестирование с выдачей технического заключения</p>
+                        <p class="price"><span>Цена</span>1 000 ₽</p>
+                        <p class="time"><span>Срок</span>30-120 мин</p>
+                        <button class="order">Заказать <img src="ic/dropdown.svg" alt=""></button>
+
+                    </div>
+                    <div class="swiper-slide box-55">
+                        <p class="uslugi"><span>Ремонтные услуги</span>
+                            <br>Замена программного обеспечения</p>
+                        <p class="price"><span>Цена</span>1 000 ₽</p>
+                        <p class="time"><span>Срок</span>30-120 мин</p>
+                        <button class="order">Заказать <img src="ic/dropdown.svg" alt=""></button>
+
+                    </div>
+                </div>
+            </div>
+
             <table class="prices__list">
                 <tr class="prices__list__header">
                     <td>Ремонтные услуги</td>
@@ -184,6 +237,83 @@
             </div>
         </section>
     </aside>
+
+
+    <!-- Swiper for Brands-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+
+            const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            });
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+
+    const swiper1 = new Swiper('.swiper1', {
+    // Optional parameters
+    
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+    });
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+
+    const swiper2 = new Swiper('.swiper2', {
+    // Optional parameters
+    
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+    });
+</script>
 
 
 </body>

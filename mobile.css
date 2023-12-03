@@ -1,0 +1,303 @@
+aside {
+    display: none;
+}
+
+*, main {
+    max-width: 430px;
+}
+
+html {
+    max-width: 430px;
+    margin-left: -40px;
+}
+
+main {
+    overflow-x: hidden; 
+    position: absolute;
+    
+}
+
+h1 {
+    margin: 25px;
+    padding-left: 20px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.header__up button {
+    display: none; 
+}
+
+.header__hidden {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    margin-top: -23px;
+    max-width: 430px;
+}
+
+.header__hidden__left,
+.header__hidden__right {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.header__hidden__left-burger,
+.header__hidden__left-logo {
+   background-color: white;
+   border: none;
+   margin: 5px;
+}
+
+.header__hidden__right-phone,
+.header__hidden__right-chat, 
+.header__hidden__right-profile {
+    display: none;
+}
+
+.header__hidden__right button {
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+ }
+
+ .box {
+    display: flex;
+    flex-direction: column;
+ }
+
+.about__picture img {
+    max-width: 430px;
+    margin-left: -80px;
+    margin-top: 20px;
+}
+
+.about__text {
+    max-width: 400px;
+    margin-left: -10px;
+}
+
+.read-more {
+    margin-top: -60px;
+    margin-left: 30px;
+}
+
+.mobile__hidden {
+    display: none;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    overflow-x: auto;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    max-width: 430px;
+  }
+
+  .navbar button {
+    display: flex;
+    display: flex;
+    white-space: nowrap;
+} 
+
+.header__hidden__right-repair img {
+    border-left: solid 3px rgb(237, 237, 237);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header__hidden__left-logo {
+    padding-left: 20px;
+}
+
+/* Brands */
+
+.brands__title {
+    margin-top: 170px;
+    max-width: 430px;
+}
+
+.brands__logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    overflow-x: auto;
+  }
+
+  .brands__logos div img {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    width: 300px;
+    padding: 0px;
+} 
+
+.brands__logos div {
+    width: 300px;
+}
+
+
+
+/* Devices */
+
+.devices__boxes div {
+    width: 300px;
+    margin-right: 15px;
+}
+
+.devices__boxes {
+    display: flex;
+    justify-content: space-around;
+    max-width: 430px;
+    margin-left: 15px;
+    flex-direction: row;
+    justify-content: flex-start; 
+    overflow-x: auto;
+    width: 100%;
+  }
+
+.box-1, .box-2, .box-3, .box-4 {
+    display: flex;
+    white-space: nowrap;
+    width: 200px;
+    height: 240px;
+    width: 100%;
+    padding-right: 100px;
+    position: absolute;
+}
+
+.box-1 img {
+    position: relative;
+    left: -90px;
+    top: 100px;
+    margin-left: 60px;
+}
+
+.box-2 img {
+    position: relative;
+    left: -90px;
+    top: 100px;
+    margin-left: 60px;
+}
+
+.box-3 img {
+    position: relative;
+    left: -90px;
+    top: 100px;
+    margin-left: 60px;
+}
+
+.box-4 img {
+    position: relative;
+    left: -90px;
+    top: 100px;
+    margin-left: 60px; 
+}
+
+.devices__boxes div p {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+
+/* Prices */
+.prices__list {
+    display: none;
+}
+
+
+.hidden__prices__list {
+    display: flex;
+    justify-content: space-around;
+    max-width: 430px;
+    margin-left: 15px;
+    flex-direction: row;
+    justify-content: flex-start; 
+    overflow-x: auto;
+    width: 100%;
+  }
+
+.box-11, .box-22, .box-33, .box-44, .box-55 {
+    background-color: white;
+    border: 1px solid grey;
+    display: flex;
+    white-space: nowrap;
+    width: 200px;
+    height: 240px;
+    width: 100%;
+    padding-right: 100px;
+    position: absolute;
+    border: #EAEAEA solid 1px;
+    border-radius: 7px;
+}
+.order {
+    background-color: #FF3E79;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 7px 10px 7px;
+    font-size: 12px;
+    font-family: TTLakes-Medium;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+ 
+
+/* Footer */
+
+.footer__warning {
+    max-width: 370px;
+}
+
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    max-width: 430px;
+    margin-left: 10px;
+}
+
+.footer .footer__container .left {
+    text-align: center;
+    margin-left: -120px;
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
+
+ .footer__container div:nth-child(2) {
+    margin-left: -120px;
+    padding: 0px;
+    margin-top: 20px;
+}
+
+.footer__container div:first-child {
+    margin-left: -120px;
+}
+
+
+.swiper {
+   height: 120px;
+   width: auto;
+}
+
+.swiper1 {
+    height: 200px;
+}
+
+.swiper2 {
+    height: 200px;
+}
+
+
+

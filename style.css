@@ -14,7 +14,7 @@
 
 
 
-  .header__hidden {
+  .header__hidden, .hidden__prices__list {
     display: none;
   }
 
@@ -250,7 +250,7 @@
 
   }
 
-  .read-more button img {
+.read-more button img {
     margin-right: 10px;
   }
 
@@ -279,6 +279,10 @@
     font-family: TTLakes-Medium;
   }
 
+  .brands button img {
+    margin-right: 10px;
+  }
+
 .brands__logos {
   display: flex;
   flex-wrap: wrap;
@@ -287,13 +291,13 @@
   justify-content: space-around;
 }
 
-.brands button img {
+.brands div {
   margin-right: 10px;
 }
 
 .brands__logos img {
-  flex: 0 0 0 25%; /* Three columns (33.333%) */
-  box-sizing: border-box; /* Include padding and border in element's total width */
+  flex: 0 0 0 25%; 
+  box-sizing: border-box; 
   padding: 10px;
   margin-right: 15px;
 }

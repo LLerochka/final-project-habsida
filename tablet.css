@@ -101,7 +101,6 @@ h1 {
 
 .navbar button {
     display: flex;
-    display: flex;
     white-space: nowrap;
 }
 
@@ -129,8 +128,7 @@ h1 {
 
 /* Brands */
 .brands {
-    margin-top: -60px;
-    
+    margin-top: -60px;  
 }
 
 .brands  .brands__logos {
@@ -141,7 +139,7 @@ h1 {
     margin-top: 15px;
   }
 
-.brands__logos img {
+.brands__logos div {
     flex: 0 0 30%; 
     box-sizing: border-box; 
     margin: 0;
