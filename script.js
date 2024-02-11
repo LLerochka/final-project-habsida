@@ -92,16 +92,24 @@ const menuWrapper = document.querySelector('.sidebar-wrapper');
 const menu = document.querySelector('.sidebar');
 const main = document.querySelector('main');
 const shadow = document.querySelector('.sidebar-wrapper > div');
+const html = document.querySelector('html');
+const body = document.querySelector('body');
 
 openMenuBtn.addEventListener('click', () => {
   menu.style.display = 'block';
   menuWrapper.style.display = 'block';
   shadow.style.display = 'block';
   main.style.display = 'block';
+  if (window.innerWidth <= 767) {
+    document.querySelector('body, html').classList.add('asdf');
+  }
 });
 
 closeMenuBtn.addEventListener('click', () => {
   menu.style.display = 'none';
   menuWrapper.style.display = 'none';
   main.style.display = 'block';
+  if (window.innerWidth <= 767) {
+    document.querySelector('body, html').classList.remove('asdf');
+  }
 });

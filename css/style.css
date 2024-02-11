@@ -23,6 +23,9 @@
   
 }
 
+.asdf {
+  overflow-y: hidden;
+}
 
 .sidebar {
   display: block;
