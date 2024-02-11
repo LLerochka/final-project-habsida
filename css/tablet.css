@@ -1,0 +1,483 @@
+@font-face {
+    font-family: 'TTLakes-Regular'; 
+    src: url(fonts/TTLakes-Regular.woff) format('woff');
+  }
+@font-face {
+    font-family: 'TTLakes-Medium'; 
+    src: url(fonts/TTLakes-Medium.woff) format('woff');
+  }
+@font-face {
+    font-family: 'TTLakes-Bold'; 
+    src: url(fonts/TTLakes-Bold.woff) format('woff');
+  }
+
+  :root {
+    --overlay-color:   rgba(255, 255, 255, 0.75);
+    --menu-speed: 0.75sec;
+  }
+
+  .sidebar-wrapper {
+    width: 320px;
+    z-index: 2;
+    position: fixed;
+    min-height: 1150px;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20);
+  }
+
+  .sidebar-wrapper>div {
+    background-color: var(--overlay-color);
+    min-width: 678px;
+    width: 1440px;
+    min-height: 1150px;
+    
+  }
+
+  main {
+    z-index: 0;
+  }
+
+  
+  .sidebar {
+    display: block;
+    width: 320px;
+    height: 1024px;
+    background: #fff;
+    position: relative;
+    z-index: 3;
+  }
+
+  .sidebar__menu {
+    margin-bottom: 268px;
+    }
+
+  .header__white__left-burger  {
+    border-radius: 50%;
+    background-color: #fff;
+    border: none;
+    margin-left: 24px;
+    margin-right: 20px;
+  }
+
+  .header__white__left-burger::after {
+    content: ' ';
+    display: inline-block;
+    width: 2px;
+    height: 32px;
+    margin-left: 16.73px;
+    border-radius: 1px;
+    background: #EAEAEA;
+    }
+
+  .header__white__left-logo::after {
+    content: ' ';
+    display: none;
+  }
+  .header__white__right-repair {
+    border-radius: 50%;
+    background-color: #fff;
+    border: none;
+    margin-left: 0;
+  }
+  .header__white__right-checkstatus {
+    border-radius: 50%;
+    background-color: #fff;
+    border: none;
+    margin-right: 24px;
+    margin-left: 16px;
+  }
+
+  .header__white__right {
+    display: flex;
+  }
+
+.header__white__right-phone,
+.header__white__right-chat,
+.header__white__right-profile {
+  display: flex;
+  border-radius: 50%;
+  background-color: #fff;
+  border: none;
+  margin-left: 16px;
+}
+
+.header__white__right-profile::after {
+  content: ' ';
+  display: flex;
+  width: 2px;
+  height: 32px;
+  margin-left: 20px;
+  border-radius: 1px;
+  background: #EAEAEA;
+  margin-top: 4px;
+  margin-right: 20px;
+}
+
+.header__up__buttons {
+  display: none;
+}
+
+.navbar {
+  margin-bottom: 40px;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+}
+
+.box-1half {
+ width: 50%;
+ box-sizing: border-box;
+ margin-left: 15px;
+ margin-right: 48px;
+}
+.about__text {
+  font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.2px;
+}
+
+.about__picture {
+width: 50%;
+height: auto;
+display: block;
+margin-right: 24px;
+}
+
+.read-more {
+  color: #1B1C21;
+font-family: TTLakes-Regular;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+letter-spacing: -0.2px;
+}
+
+.mobile__hidden {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.tablet__hidden {
+  display: none;
+}
+
+.swiper,
+.swiper2 {
+  display: none;
+}
+
+.brands {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.brands__logos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  width: 100%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+
+.brands__logos div {
+  flex: 0 0 auto;
+  width: 224px;
+  height: auto;
+  margin-right: 24px;
+  margin-bottom: 5px;
+}
+
+.brands__logos__hidden__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  width: 100%;
+  margin: auto;
+  justify-content: space-around;
+  margin-top: -25px;
+  margin-bottom: 10px;
+}
+
+.brands__logos__hidden__container div {
+  flex: 0 0 auto;
+  width: 224px;
+  height: auto;
+  margin-right: 24px;
+  margin-bottom: 5px;
+}
+
+.brands__logos__hidden__container div:last-child img {
+  display: none;
+}
+
+.logo-hidden {
+  display: none;
+}
+
+.hidejs {
+  display: none;
+}
+
+.show-all {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
+  border: none;
+  color: #1B1C21;
+  font-family: TTLakes-medium;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; 
+  letter-spacing: -0.2px;
+  margin-bottom: 32px;
+  margin-top: 10px;
+}
+
+.show-all img {
+  margin-left: 32px;
+  margin-right: 8px;
+}
+
+.devices-container {
+  display: block;
+}
+
+.devices__boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.devices__boxes__hidden {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.devices__boxes div {
+  flex-direction: row;
+  height: 160px;
+  background-color: #fff;
+  border-radius: 6px;
+  position: relative;
+  width: 240px;
+  margin-left: 10px;
+}
+
+.devices__boxes__hidden div {
+  flex-direction: row;
+  height: 160px;
+  background-color: #fff;
+  border-radius: 6px;
+  position: relative;
+  width: 240px;
+  margin-left: 10px;
+}
+
+.devices__boxes div img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 105px;
+  left: 120px;
+}
+
+.devices__boxes__hidden div img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 105px;
+  left: 120px;
+}
+
+.devices__boxes div p {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.devices__boxes__hidden div p {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.devices .show-all {
+  margin-top: 24px;
+}
+
+.swiper3 {
+  display: none;
+}
+
+.hidden__prices__list {
+  display: none;
+}
+
+.hidden__prices__list {
+  display: none;
+  }
+  
+  .prices__list {
+    display: flex;
+    background-color: #fff;
+    color: #1B1C21;
+font-family: TTLakes-Regular;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; 
+letter-spacing: 0.2px;
+margin-left: 16px;
+  }
+
+  .prices__list tr td:nth-child(1) {
+    padding-left: 16px;
+    
+  }
+
+  .prices__list tr:nth-child(2) td {
+padding-top: 16px;
+padding-bottom: 8px;
+}
+
+
+
+  .prices__list tr td button {
+    color: #FFF;
+    text-align: right;
+    font-family: TTLakes-Regular;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; 
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    background-color: #FF3E79;
+    border: none;
+    border-radius: 16px;
+    width: 119px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+  .prices__list tr td button img {
+    margin-left: 8px;
+  }
+
+th {
+  background-color: #f8f8f8;
+  color: #7E7E82;;
+font-family: TTLakes-Regular;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; 
+letter-spacing: 0.2px;
+margin-left: 16px;
+text-align: start;
+padding-left: 16px;
+}
+
+ .prices__list tr td::after {
+   content: ' ';
+   display: block;
+   width: 100%;
+   height: 1px;
+   background-color: #EAEAEA;
+   margin-top: 23px;
+ }
+
+.prices__list tr td:nth-child(4):after {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EAEAEA;
+  margin-top: 10px;
+}
+   
+ .prices__list {
+border-collapse: collapse;
+height: 390px;
+margin-right: 16px;
+ }
+
+ td + td {
+  padding-left: 20px; 
+}
+
+tr {
+  height: 64px;
+  justify-content: center;  
+}
+
+.prices__list tr:last-child td::after {
+  content: none;
+}
+.prices__list tr:last-child td {
+  margin-bottom: 40px;
+}
+
+.prices__list tr:nth-child(5) td::after {
+  margin-bottom: -20px;
+}
+
+.prices__list tr:first-child  {
+  width: 720px;
+}
+
+
+.prices__list tr:nth-child(5) td::after {
+ margin-bottom: -10px;
+}
+
+.footer__warning {
+  width: 421px;
+  margin-top: 24px;
+  margin-left: 24px;
+}
+
+.footer__get-offer {
+  margin-left: 24px;
+  width: 400px;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__container div:first-child {
+  text-align: start;
+  margin-left: 24px;
+}
+
+.footer__container div:last-child {
+  text-align: end;
+  margin-top: 18px;
+}
+
+button img:hover,
+.show-all-brands:hover,
+#read-more:hover,
+.show-all-devices:hover,
+.hover:hover,
+.logo img:hover,
+.devices__boxes__go:hover {
+  cursor: pointer;
+}
+
