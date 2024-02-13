@@ -20,7 +20,148 @@
 .sidebar-wrapper {
   background-color: #fff;
   z-index: 1000;
-  
+}
+
+.order-call {
+  background-color: #fff;
+  min-width: 320px;
+  min-height: 676px;
+  display: none;
+}
+
+.order-call__close {
+  margin-top: 24px;
+  margin-left: 16px;
+}
+
+.order-call__form p {
+  color: #7E7E82;
+font-family: "TTLakes-Regular";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px; 
+margin-left: 16px;
+width: 288px;
+}
+
+.order-call__form p span {
+  color: #FF3E79;
+}
+
+#phone_input{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #EAEAEA;
+  width: 288px;
+  margin-bottom: 16px;
+  color: #B5B6BC;
+ font-family: "TTLakes-Regular";
+ font-size: 16px;
+ font-style: normal;
+ font-weight: 500;
+ line-height: 24px; 
+ letter-spacing: -0.2px;
+ padding-left: 16px;
+ margin-left: 16px;
+}
+
+#submit {
+margin-left: 190px;
+}
+
+.feedback-container {
+  display: none;
+}
+
+.feedback-container {
+  position: fixed;
+  min-width: 320px;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+.feedback__toggler__close {
+ margin-top: 20px;
+ margin-left: 16px;
+ margin-bottom: 20px;
+}
+
+ul.feedback-form {
+  margin-left: 16px;
+}
+
+ul.feedback-form li input,
+ul.feedback-form li textarea {
+ padding-top: 12px;
+ padding-bottom: 12px;
+ border-radius: 8px;
+ border: 1px solid #EAEAEA;
+ width: 288px;
+ margin-bottom: 16px;
+ color: #B5B6BC;
+font-family: "TTLakes-Regular";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; 
+letter-spacing: -0.2px;
+padding-left: 16px;
+}
+
+ul.feedback-form li textarea {
+  height: 118px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.feedback__form p {
+  color: #7E7E82;
+font-family: "TTLakes-Regular";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px; 
+margin-left: 16px;
+width: 288px;
+}
+
+.feedback__form p span {
+  color: #FF3E79;
+}
+
+.feedback__form button,
+.order-call__form button {
+  display: flex;
+  border: none;
+  border-radius: 16px;
+background: #FF3E79;
+height: 32px;
+width: 119px;
+color: #fff;
+text-align: right;
+font-family: TTLakes-Medium;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 200% */
+letter-spacing: -0.15px;
+text-transform: uppercase;
+justify-content: center;
+align-items: center;
+margin-left: 168px;
+margin-top: 19px;
+}
+
+.feedback__form button img,
+.order-call__form button img {
+  border: none;
+  width: 10px;
+  height: 10px;
+  margin-left: 8px;
 }
 
 .asdf {
@@ -47,6 +188,11 @@
 
 .sidebar__header img:first-child {
   display: flex;
+}
+
+.sidebar__header img:last-child:hover,
+.sidebar__header img:first-child:hover {
+  cursor: pointer;
 }
 
 .sidebar__menu ul li button {

@@ -16,6 +16,73 @@
     --menu-speed: 0.75sec;
   }
 
+.order-call {
+    width: 440px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2000;
+    display: none;
+    height: 100%;
+  }
+
+#phone_input,
+.order-call__form p {
+  margin-left: 32px;
+  width: 376px;
+}
+
+#submit {
+  margin-left: 290px;
+}
+
+  .order-call__close {
+position: absolute;
+left: -80px;
+margin-top: 32px;
+  }
+
+  .order-call__form h1 {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .feedback-container {
+    display: none;
+  }
+
+  .feedback-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 440px;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  }
+
+  .feedback__toggler__close {
+    position: absolute;
+left: -80px;
+top: 0px;
+  }
+
+  ul.feedback-form {
+    margin-left: 32px;
+  }
+
+  ul.feedback-form li input,
+ul.feedback-form li textarea {
+  width: 376px;
+}
+
+.feedback__form p {
+  width: 376px;
+  margin-left: 32px;
+}
+
+.feedback__form button {
+  margin-left: 272px;
+}
+
   .sidebar-wrapper {
     width: 320px;
     z-index: 2;

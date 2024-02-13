@@ -11,6 +11,8 @@
     src: url(fonts/TTLakes-Bold.woff) format('woff');
   }
 
+
+
 body {
   max-width: 1440px;
   margin: 0 auto;
@@ -22,6 +24,16 @@ main {
   max-width: 1120px;
   height: 100%;
   z-index: 1;
+}
+
+.feedback-container {
+  display: none;
+}
+
+.feedback-container {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .sidebar-wrapper {

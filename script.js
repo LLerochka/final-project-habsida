@@ -105,11 +105,63 @@ openMenuBtn.addEventListener('click', () => {
   }
 });
 
+// Close menu functionality (phone) & (tablet)
+
 closeMenuBtn.addEventListener('click', () => {
   menu.style.display = 'none';
   menuWrapper.style.display = 'none';
   main.style.display = 'block';
-  if (window.innerWidth <= 767) {
-    document.querySelector('body, html').classList.remove('asdf');
+  document
+    .querySelector('body, html')
+    .forEach((el) => el.classList.remove('asdf'));
+});
+
+// Open feedback form functionality
+
+const chatBtn = document.querySelector('.chat-icon');
+const feedbackForm = document.querySelector('.feedback-container');
+const feedbackFormCloseBtn = document.querySelector(
+  '.feedback__toggler__close'
+);
+const feedbackShadow = document.querySelector('.feedback-overlay');
+
+chatBtn.addEventListener('click', () => {
+  feedbackForm.style.display = 'block';
+  menuWrapper.style.display = 'none';
+  feedbackShadow.style.display = 'block';
+});
+
+// Close feedback form functionality
+
+feedbackFormCloseBtn.addEventListener('click', () => {
+  feedbackForm.style.display = 'none';
+
+  if (window.innerWidth <= 1000) {
+    menuWrapper.style.display = 'block';
+  } else {
+    menuWrapper.style.display = 'none';
+  }
+});
+
+// Open order call form functionality
+
+const phoneBtn = document.querySelector('.phone-icon');
+const orderCallForm = document.querySelector('.order-call');
+const orderCallFormCloseBtn = document.querySelector('.order-call__close');
+
+phoneBtn.addEventListener('click', () => {
+  orderCallForm.style.display = 'block';
+  menuWrapper.style.display = 'none';
+  feedbackShadow.style.display = 'block';
+});
+// Close order call form functionality
+
+orderCallFormCloseBtn.addEventListener('click', () => {
+  orderCallForm.style.display = 'none';
+
+  if (window.innerWidth <= 1000) {
+    menuWrapper.style.display = 'block';
+  } else {
+    menuWrapper.style.display = 'none';
   }
 });

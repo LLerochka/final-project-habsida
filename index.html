@@ -14,6 +14,41 @@
     <title>Document</title>
 </head>
 <body>
+
+<!-- Order Call -->
+    <div class="order-call">
+        <img class="order-call__close" src="ic/burger.svg" alt="">
+        <div id="order-call__form" class="order-call__form">
+            <h1>Заказать звонок</h1>
+            <ul>
+                <li><input id="phone_input" type="text" placeholder="Телефон"></li>
+            </ul>
+                <p>Нажимая “отправить”, вы даете согласие на <span class="primary">обработку персональных данных</span> и соглашаетесь с нашей <span class="primary">политикой конфиденциальности</span>
+                </p>
+            <button id="submit" type="submit" value="отправить">отправить <img src="ic/dropdown.svg" alt=""></button> 
+        </div>
+    </div>
+
+<!-- Feedback -->
+    <div class="feedback-container">
+            <div class="feedback">
+                <img class="feedback__toggler__close" src="ic/burger.svg" alt="">
+                <div id="feedback__form" class="feedback__form">
+                    <h1>Обратная связь</h1>
+                    <ul class="feedback-form">
+                        <li><input id="name_input" type="text" placeholder="Имя"></li>
+                        <li><input id="phone_input" type="text" placeholder="Телефон"></li>
+                        <li><input id="email_input" type="email" placeholder="Электронная почта"></li>
+                        <li><textarea id="message_input" cols="30" rows="10" placeholder="Сообщение"></textarea></li>
+                    </ul>
+                    <p>Нажимая “отправить”, вы даете согласие на <span class="primary">обработку персональных данных</span> и соглашаетесь с нашей <span class="primary">политикой конфиденциальности</span>
+                        </p>
+                    <button id="submit" type="submit" value="отправить">отправить <img src="ic/dropdown.svg" alt=""></button> 
+                </div>
+            </div>  
+    </div>
+
+
     <div class="sidebar-wrapper wrapper">
         <div>
             <section class="sidebar" id="sidebar">
@@ -36,8 +71,8 @@
                 </div>
                 <div class="sidebar__footer">
                     <div class="sidebar__footer__buttons">
-                        <img src="ic/phone.svg" alt="">
-                        <img src="ic/chat.svg" alt="">
+                        <img class="phone-icon" src="ic/phone.svg" alt="">
+                        <img class="chat-icon" src="ic/chat.svg" alt="">
                         <img src="ic/profile.svg" alt="">
                     </div>
                     <div class="sidebar__footer__contacts">
